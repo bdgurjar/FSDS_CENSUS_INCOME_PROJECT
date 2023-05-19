@@ -34,7 +34,7 @@ class ModelTrainer:
             )
 
             models={
-             'LogisticRegression':LogisticRegression(random_state=42),
+             'LogisticRegression':LogisticRegression(C=5, max_iter=100, penalty='l2',random_state=42),
              'DecisionTreeClassifier':DecisionTreeClassifier(max_depth=6, min_samples_leaf=3, min_samples_split=5,random_state=42)
         }
             model_report:dict=model_evalute(X_train, y_train, X_test, y_test,models)

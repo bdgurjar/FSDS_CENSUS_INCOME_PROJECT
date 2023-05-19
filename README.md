@@ -11,3 +11,13 @@ conda activate venv/
 ```
 pip install -r requirements.txt
 ```
+
+### Train Our Model
+```
+python src/pipeline/training_pipeline.py
+```
+
+### Run Our Model
+'''
+python app.py
+```

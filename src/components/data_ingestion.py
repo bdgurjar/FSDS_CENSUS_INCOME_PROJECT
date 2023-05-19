@@ -25,9 +25,9 @@ class DataIngestion:
     def initiate_data_ingestion(self):
         logging.info('Data Ingestion methods Starts')
         try:
-            df=pd.read_csv(os.path.join('./notebooks/data/Census_Income_Data Set2.csv'))
+            df=pd.read_csv(os.path.join('./notebooks/data/Census_Income_Data_Set1.csv'))
             logging.info('Dataset read as pandas Dataframe')
-            df=pd.DataFrame(df)
+            #df=pd.DataFrame(df)
             logging.info('Data Frame is created')
 
             os.makedirs(os.path.dirname(self.ingestion_config.raw_data_path),exist_ok=True)

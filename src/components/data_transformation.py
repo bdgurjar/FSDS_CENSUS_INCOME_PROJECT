@@ -29,8 +29,8 @@ class DataTransformation:
                     
             
             # Define which columns should be onehot-encoded and which should be scaled
-            numerical_cols=["age","fnlwgt","education-num","capital-gain","capital-loss","hours-per-week"]
-            category_cols=["workclass","education","marital-status","occupation","relationship","race","sex","native-country"]
+            numerical_cols=["age","fnlwgt","education_num","capital_gain","capital_loss","hours_per_week"]
+            category_cols=["workclass","education","marital_status","occupation","relationship","race","sex","native_country"]
             
             # Define onehot encoded variable
             workclass_cat=[' State-gov', ' Self-emp-not-inc', ' Private', ' Federal-gov',' Local-gov', ' others', ' Self-emp-inc', ' Without-pay', ' Never-worked']
